@@ -1,0 +1,154 @@
+body {
+    background-color: #434343;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#pojemnik{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    background-image: url(tlo.png);
+    background-repeat: no-repeat;
+    background-size: 960px 450px;
+    height: 450px;
+    line-height: 8.5;
+    margin-top: 0;
+    letter-spacing: 5px;
+}
+
+.bold > input{
+    font-weight: bold;
+    background-color: #ffff00;
+}
+
+ol{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+input{
+    font-size: 22px;
+    padding: 15px;
+    width: 370px;
+    background-color: #aaaa00;
+}
+
+.grafika{
+    min-height: 500px;
+    width: 900px;
+    padding: 30px;
+    background-color: #406d45;
+    overflow: hidden;
+    opacity: .4;
+    transition: opacity 1.7s ease-in-out;    
+}
+
+.grafika:hover{
+    opacity: 1;
+}
+
+.grafika > img{
+    height: 500px;
+    width: 900px;
+    display: block;
+    border: 6px solid black;
+    border-radius: 16px;
+}
+
+.grafika.no-resize > img{
+    border-radius: 0;
+}
+
+.tekst{
+    min-height: 400px;
+    width: 960px;
+}
+
+strong{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: darkred;
+    background-color: #636363;
+    padding: 40px;
+    border: 6px solid white;
+    border-radius: 70px 0 70px 0;
+    text-shadow:
+    1px 1px 0 red,
+    -1px 1px 0 red,
+    -1px -1px 0 red,
+    1px -1px 0 red;
+}
+
+section.wstep{
+    background-color: #62357f;
+    margin-bottom: 85px;
+}
+
+p.wstep{
+    line-height: 1.8;
+    padding: 12px;
+    color: white;
+    background-color: inherit;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: forestgreen;
+}
+
+article > header{
+    margin-bottom: 85px;
+}
+
+.grafika.no-resize{
+    overflow: hidden;
+    min-height: 700px;
+    transition: opacity 3.4s ease-out;
+}
+
+.grafika.no-resize > img#huge{
+    transition: all 1.7s ease-in-out;
+    height: 700px;
+    opacity: .4;
+    filter: brightness(.4);
+}
+
+.grafika.no-resize > img#huge:hover{
+    transform: scale(1.1);
+    filter: brightness(1);
+    opacity: .7;
+}
+
+#footer{
+    color: red;
+    text-shadow:
+    1px 1px 0 darkred,
+    -1px 1px 0 darkred,
+    -1px -1px 0 darkred,
+    1px -1px 0 darkred;
+    font-size: 24px;
+    background-color: #000;
+    padding: 24px;
+    margin-bottom: 14px;
+}
+
+span{
+    background-color: black;
+    text-shadow: 
+    2px 2px 0 gray,
+    -2px 2px 0 gray,
+    -2px -2px 0 gray,
+    2px -2px 0 gray;
+    padding: 15px;
+}
